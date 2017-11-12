@@ -32,8 +32,10 @@ class School
   end
 
   def sort
-    @roster.each do |grade|
-      return grade.sort
+    @roster.each do |key, value|
+      @key.each do |value|
+        return value.sort
+      end
     end
   end
 
