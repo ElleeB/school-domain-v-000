@@ -15,20 +15,20 @@ class School
 
   def add_student(student, grade)
     if
-      ROSTER == {}
-      ROSTER[grade] = [] << "#{student}"
+      @roster == {}
+      @roster[grade] = [] << "#{student}"
     elsif
-    keys = ROSTER.keys
+    keys = @roster.keys
       if keys.include?(grade) == true
-        ROSTER[grade] << "#{student}"
+        @roster[grade] << "#{student}"
       else
-        ROSTER[grade] = [] << "#{student}"
+        @roster[grade] = [] << "#{student}"
       end
     end
   end
 
   def print_roster
-    print ROSTER
+    print @roster
   end
 
 end
