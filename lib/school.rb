@@ -27,6 +27,10 @@ class School
     end
   end
 
+  def grade(grade)
+    return @roster[grade]
+  end
+
   def print_roster
     print @roster
   end
