@@ -31,7 +31,7 @@ class School
     return @roster[grade]
   end
 
-  def sort(grade)
+  def sort
     @roster.each do |grade|
       return grade.sort
     end
