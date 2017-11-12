@@ -13,14 +13,14 @@ class School
   end
 
   def add_student(student, grade)
+
     if # hash is  empty
       ROSTER == {}
-      ROSTER[grade] = [] << "#{student}" #add grade => [student]
+      ROSTER[grade] = [] << "#{student}" #add grade => [student]    
     elsif
-      keys = ROSTER.keys
-        if keys.include?(grade) == false
-          ROSTER[grade] = [] << "#{student}"
-        end
+      ROSTER.keys.include?(grade) == false
+        ROSTER[grade] = [] << "#{student}"
+      end
     else
       ROSTER["#{grade}"] << "#{student}"
       puts student
