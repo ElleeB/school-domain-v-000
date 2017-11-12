@@ -16,11 +16,10 @@ class School
 
     if # hash is  empty
       ROSTER == {}
-      ROSTER[grade] = [] << "#{student}" #add grade => [student]    
+      ROSTER[grade] = [] << "#{student}" #add grade => [student]
     elsif
       ROSTER.keys.include?(grade) == false
         ROSTER[grade] = [] << "#{student}"
-      end
     else
       ROSTER["#{grade}"] << "#{student}"
       puts student
