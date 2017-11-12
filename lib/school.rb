@@ -28,7 +28,7 @@ class School
   end
 
   def grade(grade)
-    return @roster[grade]
+    return @roster[grade].sort
   end
 
   def print_roster
