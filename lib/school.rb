@@ -1,13 +1,10 @@
 
 require 'pry'
 
-
 class School
 
   attr_accessor :grade, :student
   attr_reader :school_name
-
-
 
   def initialize(school_name)
     @school_name = school_name
@@ -15,18 +12,17 @@ class School
   end
 
   def add_student(student, grade)
-
     if
       ROSTER == {}
       ROSTER[grade] = [] << "#{student}"
     elsif
-      keys = ROSTER.keys
-        if keys.include?(grade) == true
-          ROSTER[grade] << "#{student}"
-        else
-          ROSTER[grade] = [] << "#{student}"
-        end
+    keys = ROSTER.keys
+      if keys.include?(grade) == true
+        ROSTER[grade] << "#{student}"
+      else
+        ROSTER[grade] = [] << "#{student}"
       end
+    end
   end
 
   def print_roster
