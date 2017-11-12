@@ -12,26 +12,26 @@ class School
   def initialize(school_name)
     @school_name = school_name
   end
-  
+
   def add_student(student, grade)
-    
-    if 
-      ROSTER == {} 
-      ROSTER[grade] = [] << "#{student}" 
-    elsif 
+
+    if
+      ROSTER == {}
+      ROSTER[grade] = [] << "#{student}"
+    elsif
       keys = ROSTER.keys
-        if keys.include?(grade) == true 
+        if keys.include?(grade) == true
           ROSTER[grade] << "#{student}"
         else
           ROSTER[grade] = [] << "#{student}"
         end
       end
   end
-  
+
   def print_roster
     print ROSTER
   end
-  
+
 end
 
 
