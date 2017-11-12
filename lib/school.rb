@@ -28,7 +28,8 @@ class School
   end
 
   def grade(grade)
-    return @roster[grade].sort
+    @alpha_roster = @roster[grade]
+    return @alpha_roster.sort
   end
 
   def print_roster
