@@ -1,6 +1,7 @@
 
 require 'pry'
 
+
 class School
 
   attr_accessor :grade, :student
@@ -11,46 +12,33 @@ class School
   def initialize(school_name)
     @school_name = school_name
   end
-
+  
   def add_student(student, grade)
-
-    if # hash is  empty
-      ROSTER == {}
-      ROSTER[grade] = [] << "#{student}" #add grade => [student]
-    elsif
-      ROSTER.keys.include?(grade) == false
-        ROSTER[grade] = [] << "#{student}"
-    else
-      ROSTER["#{grade}"] << "#{student}"
-      puts student
-    end
+    
+    if 
+      ROSTER == {} 
+      ROSTER[grade] = [] << "#{student}" 
+    elsif 
+      keys = ROSTER.keys
+        if keys.include?(grade) == true 
+          ROSTER[grade] << "#{student}"
+        else
+          ROSTER[grade] = [] << "#{student}"
+        end
+      end
   end
-  binding.pry
-
+  
   def print_roster
-    puts ROSTER
+    print ROSTER
   end
-
+  
 end
 
 
-dec = School.new("Decatur")
-
-dec.add_student("laura", "10")
-dec.add_student("ryan", "11")
-dec.add_student("coda", "9")
-dec.add_student("lani", "9")
-
-
-#create new empty array  grade input into the hash and make it's value = to the array into which we schoop the students
- #empty hash => create a grade array => scoop current student in
-    #no grade array for current grade => create a grade array => scoop current student in
-    #if current grade array exists => scoop current student in
 
 
 
-
-#create new empty array  grade input into the hash and make it's value = to the array into which we schoop the students
- #empty hash => create a grade array => scoop current student in
-    #no grade array for current grade => create a grade array => scoop current student in
-    #if current grade array exists => scoop current student in
+#create new empty array grade input into the hash and make it's value = to the array into which we schoop the students
+#empty hash => create a grade array => scoop current student in
+#no grade array for current grade => create a grade array => scoop current student in
+#if current grade array exists => scoop current student in
