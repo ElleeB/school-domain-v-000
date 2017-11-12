@@ -3,7 +3,7 @@ require 'pry'
 
 class School
 
-  attr_accessor :grade, :student
+  attr_accessor :roster, :grade, :student
   attr_reader :school_name
 
   @roster = ROSTER = {}
