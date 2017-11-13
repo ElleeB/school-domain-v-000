@@ -32,11 +32,11 @@ class School
   end
 
   def sort
-    alpha_array = []
+    alpha_hash = {}
     @roster.each do |key, value|
-      alpha_array << key << value.sort
+      alpha_hash[key] = value.sort
     end
-    alpha_array
+    alpha_hash
   end
 
   def print_roster
