@@ -32,9 +32,11 @@ class School
   end
 
   def sort
+    alpha_array = []
     @roster.each do |key, value|
-      print value.sort
+      alpha_array << key << value.sort
     end
+    alpha_array
   end
 
   def print_roster
@@ -42,7 +44,6 @@ class School
   end
 
 end
-
 
 
 
